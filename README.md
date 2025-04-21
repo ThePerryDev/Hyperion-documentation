@@ -56,7 +56,7 @@ Para a construção do nosso projeto, utilizamos uma variedade de linguagens, fe
 [![badge](https://img.shields.io/badge/Figma-20232A?style=for-the-badge&logo=figma&logoColor=DC143C)](https://www.figma.com/file/vtE3px4SRkL2Mr7fmXUBUs/API-Scrum-Fatec-Jacare%C3%AD?node-id=0%3A1&t=tzsBiCP6GCnOaWe3-1) 
 [![badge](https://img.shields.io/badge/GitHub-20232A?style=for-the-badge&logo=GitHub&logoColor=FFFFFF)](https://github.com/ThePerryDev)
 <img src="https://img.shields.io/badge/TypeScript-20232A?style=for-the-badge&logo=typescript&logoColor=007ACC" alt="Typescript" />
-<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=007ACC" alt="Python" />
+<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
 <img src="https://img.shields.io/badge/HTML5-20232A?style=for-the-badge&logo=html5&logoColor=E34F26" alt="HTML" /> 
 <img src="https://img.shields.io/badge/CSS3-20232A?style=for-the-badge&logo=css3&logoColor=1572B6" alt="CSS" /> 	
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /> 
