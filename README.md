@@ -1,88 +1,93 @@
 <br id="topo">
 
-<p align="center"> <img src="./Imagens_md/BANNER.png" /></p>
+<p align="center"> <img src="./Imagens_md/SPRINT-01.PNG" /></p>
 
 <p align="center">
-    <a href="#sobre">Sobre</a>  |  
-    <a href="#backlogs">Backlog</a>  |  
-    <a href="#user-stories">User Stories</a>  |    
-    <a href="#tecnologias">Tecnologias</a>  |  
-    <a href="#equipe">Equipe</a>  |  
-    <a href="#final">Apresentação Final</a>
+    <a href="#objetivos">Objetivos da sprint</a> &nbsp |&nbsp &nbsp
+    <a href="#entregas">Entregas</a> &nbsp |&nbsp &nbsp
+    <a href="#prototipo">Desenvolvimento do Protótipo</a> &nbsp |&nbsp &nbsp 
+    <a href="#metricas">Métricas do time</a> &nbsp |&nbsp &nbsp
 </p>
-   
-<span id="sobre">
 
-## :bookmark_tabs: Sobre o projeto
+O projeto constitui na construção de uma aplicação web para mapeamento automático de cicatrizes de queimadas usando imagens do sensor WFI a bordo dos satélites CBERS4, CBERS4A e Amazônia 1. Com base nessa estruturação a sprint 01 consistiu em horas voltadas para o levantamento de dados, o desenvolvimento do wireframe, o desenvolvimento de design e identidade visual, a modelagem do banco de dados, o desenvolvimento do backend para buscar dados do PyStac e o desenvolvimento da página de login, da página principal e as abas de filtro de busca, de download das imagens e de configurações do usuário .
 
-A partir da apresentação do pedido dado pela empresa Visiona, a solução apresentada pela empresa The Perry Devs consiste no desenvolvimento de aplicações web para mapeamento automático de cicatrizes de queimadas em imagens do sensor WFI a bordo dos satélites CBERS4, CBERS4A e Amazônia 1, permitindo o monitoramento de áreas afetadas por queimadas com maior eficiência e precisão na geração de dados críticos para gestores ambientais, pesquisadores e formuladores de políticas públicas.
+[LINK DE APRESENTAÇÃO DA SPRINT 01]()
 
-> _Projeto baseado na metodologia ágil, utilizando o Framework SCRUM, procurando desenvolver a Proatividade, Autonomia, Colaboração e Entrega de Resultados dos envolvidos_
+<span id="objetivos">
 
-:pushpin: Status do Projeto: [**Em Andamento**](https://github.com/ThePerryDev/Hyperion-project) :on:
+## :dart: Objetivos da Sprint
+Os requisitos (funcionais e não funcionais) abrangidos por essa sprint são:
+- RF 01: O usuário deverá definir uma região/área e um período de interesse e obter as imagens da API do PyStac.
+- RF 07: O usuário administrador poderá cadastrar novos usuários.
+- RF 08: O usuário deverá usufruir da plataforma de maneira intuitiva e prática.
+- RNF 09: Documentação e gerenciamento no GitHub.
+- RNF 10: Processo Scrum.
+- RNF 11: Back-end: Python, FastAPI e Deep Learning.
+- RNF 12: Front-end: React, Leaflet, TypeScript, HTML e CSS.
+- RNF 13: Armazenamento: PostgreSQL.
 
-### Entregas de Sprints
-
-Cada entrega será realizada a partir da criação de uma **tag** no repositório (Hyperion-documentation), assim como a criação de releases específicas para cada Sprint a fim de controlar cada etapa do projeto. Observe a relação a seguir:
-| Sprint | Previsão | Status | Histórico | Link da Apresentação
-|:------:|:----------:|:-------------|:-------------------------------------------------:|:-------------------------------------------------:|
-| 01 | De 24/03/25 a 21/04/25 |🟢 Finalizado | [Ver relatório](https://github.com/ThePerryDev/Hyperion-documentation/tree/sprint-01)| [SPRINT 01]()|
-| 02 | De 23/04/25 a 12/05/25 | :x: Não Iniciado| [Ver relatório](https://github.com/ThePerryDev/Hyperion-documentation/tree/sprint-02)| [SPRINT 02]()|
-| 03 | De 14/05/25 a 09/06/25 | :x: Não Iniciado| [Ver relatório](https://github.com/ThePerryDev/Hyperion-documentation/tree/sprint-03)| [SPRINT 03]()|
-
-
-<span id="backlogs">
-
-## :dart: Backlog 
-
-<p align="center"> <img src="./Imagens_md/Hyperion-RF&RNF.PNG" /></p>
-<p align="center"> <img src="./Imagens_md/Hyperion-Backlog.PNG" /></p>
 
 → [Voltar ao topo](#topo)
 
-<span id="user-stories">
 
-## :mag: User Stories
-<p align="center"> <img src="./Imagens_md/Hyperion-US.PNG" /></p>
+<span id="entregas">
+        
+## :heavy_check_mark: Entregas
 
-→ [Voltar ao topo](#topo)
+### Levantamento de requisitos
 
-<span id="tecnologias">
+O levantamento de requisitos desse projeto foi realizado através de pesquisas de mercado, onde todos do grupo se juntaram para dar ideias de como contruir nosso produto, a partir disso criou-se o User Stories e classificando-os em requisitos funcionais e não funcionais (tabelas todas se encontram no tópico [**Backlogs**](#backlogs) do readme principal deste repositório). Além da organização dos requisitos em cada sprint, gerando o Sprint Backlog.
 
-## :pager: Tecnologias
-
-Para a construção do nosso projeto, utilizamos uma variedade de linguagens, ferramentas, tecnologias e bibliotecas. Cada uma dessas escolhas foi cuidadosamente considerada para garantir a melhor implementação e atender aos requisitos do projeto. Abaixo, apresentamos as utilizadas na construção do projeto.
-
-[![badge](https://img.shields.io/badge/Figma-20232A?style=for-the-badge&logo=figma&logoColor=DC143C)](https://www.figma.com/file/vtE3px4SRkL2Mr7fmXUBUs/API-Scrum-Fatec-Jacare%C3%AD?node-id=0%3A1&t=tzsBiCP6GCnOaWe3-1) 
-[![badge](https://img.shields.io/badge/GitHub-20232A?style=for-the-badge&logo=GitHub&logoColor=FFFFFF)](https://github.com/ThePerryDev)
-<img src="https://img.shields.io/badge/TypeScript-20232A?style=for-the-badge&logo=typescript&logoColor=007ACC" alt="Typescript" />
-<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
-<img src="https://img.shields.io/badge/HTML5-20232A?style=for-the-badge&logo=html5&logoColor=E34F26" alt="HTML" /> 
-<img src="https://img.shields.io/badge/CSS3-20232A?style=for-the-badge&logo=css3&logoColor=1572B6" alt="CSS" /> 	
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /> 
-<img src="https://img.shields.io/badge/Node.js-20232A?style=for-the-badge&logo=nodedotjs&logoColor=339933" alt="Node" />
-<img src="https://img.shields.io/badge/PostgreSQL-20232A?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgreesql" />
-<img src="https://img.shields.io/badge/Adobe Color-20232A?style=for-the-badge&logo=adobe&logoColor=FF0000" alt="Adobe Color" />
-<img src="https://img.shields.io/badge/VS Code-20232A?style=for-the-badge&logo=VisualStudioCode&logoColor=007ACC" alt="VS Code" />
-<img src="https://img.shields.io/badge/Microsoft Teams-20232A?style=for-the-badge&logo=MicrosoftTeams&logoColor=#6264A7" alt="Microsoft Teams" />
-<img src="https://img.shields.io/badge/Microsoft Excel-20232A?style=for-the-badge&logo=MicrosoftExcel&logoColor=217346" alt="Excel" />
-<img src="https://img.shields.io/badge/Canva-20232A?style=for-the-badge&logo=Canva&logoColor=00C4CC" alt="Canva" />
 
 → [Voltar ao topo](#topo)
 
-<span id="equipe">
 
-## :busts_in_silhouette: Equipe
+### Modelagem do Banco de Dados
 
-|    Função     | Nome                                  |                                                                                                                                                      LinkedIn & GitHub                                                                                                                                                      |
-| :-----------: | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|   Scrum Master    | Luis Eduardo                     |     [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://linkedin.com/in/eduardo-moraes-68001a272/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Eduardo270704)      |
-|   Product Owner   | Willian Garcia         |        [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/willian-garcia-6b0892123/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Willian-Garcia)        |
-|   Dev Team    | Bianca Lucas                |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/bianca-lucas-da-silva-cacula) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/biancalsc)   |
-|   Dev Team    | Daniel Dornelas          |          [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://linkedin.com/in/daniel-dornelas-758a25267/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Dani-dornas)          |
-|   Dev Team    | Franciele Chesere               | [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/franciele-chesere-605974274/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ChesereF) |
-|   Dev Team    | Heclair Sousa               | [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/heclairsousa/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/heclair) |
+A partir do levantamento de requisitos, foi criado uma modelagem do banco de dados para que facilite no momento da implementação do nosso projeto.
 
+
+→ [Voltar ao topo](#topo)
+
+
+### Elaboração do wireframe(identidade visual e design do sistema)
+
+Como proposta para solucionar o projeto requisitado de uma aplicação web para o monitoramento das cicatrizes de queimadas, foi realizado o seguinte wireframe do nosso produto:
+
+<p align="center"><img src="./Imagens_md/Wireframe.png" /><p>
+
+
+→ [Voltar ao topo](#topo)
+
+<span id="prototipo">
+    
+
+## :desktop_computer: Desenvolvimento do Protótipo
+A seguir, iniciou-se o trabalho de desenvolvimento do protótipo na plataforma figma onde era possível permitir ao usuário compreender a interação que a plataforma web irá possuir entre as páginas e formato com que o mesmo será apresentado. O protótipo a seguir.
+    
+<p align="center"><img width="600" src="./Imagens_md/Prototipo-Inicial.gif" /></p>
+
+[Confira o protótipo navegável na plataforma FIGMA](https://www.figma.com/design/sqtAHsbGNnqJHRNCAOSQQI/Hyperion-Visiona?node-id=0-1&p=f&t=9wuaxpzianFrNiDr-0)
+
+→ [Voltar ao topo](#topo)
+
+
+### Frontend, Backend e Criação do Banco de Dados
+Com toda a pesquisa inicial desenvolvida e ao wireframe proposto, foram desenvolvidas as páginas de login e página principal e suas respectivas abas do navbar para aplicar filtros de pesquisa, baixar imagens e configurar usuários, foram desenvolvidos o backend usando Python e acessando a API PyStac para obter as informações sobre os satélites e armazenar parte das informações no backend e por fim foi feito o CRUD de usuários no backend para ser armazenado no PostgreSQL.
+
+
+Sendo assim, finalizamos os requisitos propostos para esta sprint.
+
+→ [Voltar ao topo](#topo)
+
+
+ <span id="metricas">
+     
+## :chart_with_upwards_trend: Métricas do time
+Em prol de um melhor aproveitamento do tempo disponível durante a primeira sprint o time se dividiu em atividades como: planejamento, brieffing, estruturação do GitHub, criação do product backlog, sprint backlog, pesquisa e elaboração do design e da Identidade Visual, criação do wireframe e layout do site, assim como estruturação da equipe para gestão das horas com o gráfico burndown.
+    
+<p align="center"><img src="./Imagens_md/burndown-sprint-01.PNG" /></p>
+    
 
 
 → [Voltar ao topo](#topo)
