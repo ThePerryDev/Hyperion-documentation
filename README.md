@@ -11,7 +11,7 @@
 
 O projeto constitui na construção de uma aplicação web para mapeamento automático de cicatrizes de queimadas usando imagens do sensor WFI a bordo dos satélites CBERS4, CBERS4A e Amazônia 1. Com base nessa estruturação a sprint 01 consistiu em horas voltadas para o levantamento de dados, o desenvolvimento do wireframe, o desenvolvimento de design e identidade visual, a modelagem do banco de dados, o desenvolvimento do backend para buscar dados do PyStac e o desenvolvimento da página de login, da página principal e as abas de filtro de busca, de download das imagens e de configurações do usuário .
 
-[LINK DE APRESENTAÇÃO DA SPRINT 01]()
+[LINK DE APRESENTAÇÃO DA SPRINT 01](https://www.youtube.com/watch?v=YR5Hky4j7dg)
 
 <span id="objetivos">
 
