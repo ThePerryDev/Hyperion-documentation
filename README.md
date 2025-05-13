@@ -1,23 +1,33 @@
 <br id="topo">
 
-<p align="center"> <img src="./Imagens_md/SPRINT-01.PNG" /></p>
+<p align="center"> <img src="./Imagens_md/SPRINT-02.PNG" /></p>
 
 <p align="center">
     <a href="#objetivos">Objetivos da sprint</a> &nbsp |&nbsp &nbsp
     <a href="#entregas">Entregas</a> &nbsp |&nbsp &nbsp
-    <a href="#prototipo">Desenvolvimento do Protótipo</a> &nbsp |&nbsp &nbsp 
     <a href="#metricas">Métricas do time</a> &nbsp |&nbsp &nbsp
 </p>
 
-O projeto constitui na construção de uma aplicação web para mapeamento automático de cicatrizes de queimadas usando imagens do sensor WFI a bordo dos satélites CBERS4, CBERS4A e Amazônia 1. Com base nessa estruturação a sprint 01 consistiu em horas voltadas para o levantamento de dados, o desenvolvimento do wireframe, o desenvolvimento de design e identidade visual, a modelagem do banco de dados, o desenvolvimento do backend para buscar dados do PyStac e o desenvolvimento da página de login, da página principal e as abas de filtro de busca, de download das imagens e de configurações do usuário .
+O projeto tem como objetivo o desenvolvimento de uma aplicação web para o mapeamento automático de cicatrizes de queimadas, utilizando imagens do sensor WFI a bordo dos satélites CBERS-4, CBERS-4A e Amazônia-1.
+Na Sprint 02, os esforços se concentraram na integração entre o frontend e o backend, abrangendo:
+•	A implementação do CRUD de usuários;
+•	As funcionalidades de busca e processamento de imagens de satélite;
+•	O desenvolvimento das interfaces para:
+o	Gestão de funcionários;
+o	Visualização (preview) das imagens consultadas;
+o	Download dos dados processados.
+Além disso, foram integrados os cálculos de NDVI e o processamento automatizado via Deep Learning, utilizando um modelo treinado de segmentação (U-Net) para identificar áreas queimadas nas imagens.
 
-[LINK DE APRESENTAÇÃO DA SPRINT 01](https://www.youtube.com/watch?v=YR5Hky4j7dg)
+[LINK DE APRESENTAÇÃO DA SPRINT 02](https://www.youtube.com/watch?v=IOSUI0NkEHU)
 
 <span id="objetivos">
 
 ## :dart: Objetivos da Sprint
 Os requisitos (funcionais e não funcionais) abrangidos por essa sprint são:
 - RF 01: O usuário deverá definir uma região/área e um período de interesse e obter as imagens da API do PyStac.
+- RF 02: O usuário deverá obter um mapeamento automático das cicatrizes de queimadas através de Inteligência Artificial;
+- RF 04: O usuário poderá exportar os dados em formatos diferentes;
+- RF 05: O usuário poderá visualizar as imagens obtidas independente da cobertura de nuvens;
 - RF 07: O usuário administrador poderá cadastrar novos usuários.
 - RF 08: O usuário deverá usufruir da plataforma de maneira intuitiva e prática.
 - RNF 09: Documentação e gerenciamento no GitHub.
@@ -34,47 +44,27 @@ Os requisitos (funcionais e não funcionais) abrangidos por essa sprint são:
         
 ## :heavy_check_mark: Entregas
 
-### Levantamento de requisitos
+### Integração do CRUD de Usuários com Autenticação e Criação das Telas de Funcionários
 
-O levantamento de requisitos desse projeto foi realizado através de pesquisas de mercado, onde todos do grupo se juntaram para dar ideias de como contruir nosso produto, a partir disso criou-se o User Stories e classificando-os em requisitos funcionais e não funcionais (tabelas todas se encontram no tópico [**Backlogs**](#backlogs) do readme principal deste repositório). Além da organização dos requisitos em cada sprint, gerando o Sprint Backlog.
-
-
-→ [Voltar ao topo](#topo)
-
-
-### Modelagem do Banco de Dados
-
-A partir do levantamento de requisitos, foi criado uma modelagem do banco de dados para que facilite no momento da implementação do nosso projeto.
-
+Implementado a funcionalidade de cadastro, listagem, edição e exclusão de usuários na aplicação em seus respectivos botões. Essas funcionalidades garantem o gerenciamento básico de acessos, essencial para controle de diferentes perfis no sistema.
 
 → [Voltar ao topo](#topo)
 
 
-### Elaboração do wireframe(identidade visual e design do sistema)
+### Criação das Tela Preview de Imagens, Exportar Dados e de Overlay Manual
 
-Como proposta para solucionar o projeto requisitado de uma aplicação web para o monitoramento das cicatrizes de queimadas, foi realizado o seguinte wireframe do nosso produto:
-
-<p align="center"><img src="./Imagens_md/Wireframe.png" /><p>
-
+Foram implementados no frontend três painéis principais para facilitar a interação com os dados processados. O primeiro exibe cards das imagens filtradas, com visualização de thumbnails, botão para sobreposição no mapa e opção de iniciar o processamento completo da imagem. O segundo painel lista as imagens já processadas, exibindo os links individuais para download das bandas, máscara de nuvem, thumbnail e imagem segmentada, além de um botão para baixar todos os arquivos em um único pacote .zip. Por fim, foi desenvolvido um formulário para seleção manual de imagens .tif processadas, permitindo visualizar a versão .png correspondente e sobrepor a segmentação no mapa, com controles para ativar, ocultar ou encerrar a visualização.
 
 → [Voltar ao topo](#topo)
 
-<span id="prototipo">
-    
+### Integração das Buscas de Imagens de Satélite do Frontend com o Backend
 
-## :desktop_computer: Desenvolvimento do Protótipo
-A seguir, iniciou-se o trabalho de desenvolvimento do protótipo na plataforma figma onde era possível permitir ao usuário compreender a interação que a plataforma web irá possuir entre as páginas e formato com que o mesmo será apresentado. O protótipo a seguir.
-    
-<p align="center"><img width="600" src="./Imagens_md/Prototipo-Inicial.gif" /></p>
+A integração entre o frontend e o backend foi implementada para permitir que as interações do usuário no mapa — como a seleção de áreas (BBOX), escolha de coleções e definição de datas — acionem diretamente os serviços da API. Essa funcionalidade viabiliza a consulta a imagens dos satélites CBERS-4, CBERS-4A e Amazônia-1 por meio da STAC API. Os dados retornados incluem informações completas como o ID da imagem, cobertura de nuvens, BBOX, links para as bandas espectrais e uma imagem de pré-visualização (thumbnail), que pode ser exibida e sobreposta no mapa interativo da aplicação.
 
-[Confira o protótipo navegável na plataforma FIGMA](https://www.figma.com/design/sqtAHsbGNnqJHRNCAOSQQI/Hyperion-Visiona?node-id=0-1&p=f&t=9wuaxpzianFrNiDr-0)
+→ [Voltar ao topo](#topo)   
 
-→ [Voltar ao topo](#topo)
-
-
-### Frontend, Backend e Criação do Banco de Dados
-Com toda a pesquisa inicial desenvolvida e ao wireframe proposto, foram desenvolvidas as páginas de login e página principal e suas respectivas abas do navbar para aplicar filtros de pesquisa, baixar imagens e configurar usuários, foram desenvolvidos o backend usando Python e acessando a API PyStac para obter as informações sobre os satélites e armazenar parte das informações no backend e por fim foi feito o CRUD de usuários no backend para ser armazenado no PostgreSQL.
-
+### Desenvolvimento de Cálculos NDVI e Treinamento via Deep Learning
+Foi desenvolvido um pipeline automatizado para calcular o NDVI (Índice de Vegetação por Diferença Normalizada) a partir das bandas 15 (vermelho) e 16 (infravermelho próximo) das imagens de satélite. O resultado inclui um arquivo raster .tif, que representa a distribuição da vegetação, e uma visualização temática em .png para uso no frontend. Em seguida, o NDVI é processado por um modelo U-Net previamente treinado, capaz de identificar padrões visuais de queimadas. A segmentação é feita por blocos (tiles) da imagem, gerando uma saída classificada em três categorias: vegetação, solo exposto e áreas queimadas.
 
 Sendo assim, finalizamos os requisitos propostos para esta sprint.
 
@@ -84,10 +74,9 @@ Sendo assim, finalizamos os requisitos propostos para esta sprint.
  <span id="metricas">
      
 ## :chart_with_upwards_trend: Métricas do time
-Em prol de um melhor aproveitamento do tempo disponível durante a primeira sprint o time se dividiu em atividades como: planejamento, brieffing, estruturação do GitHub, criação do product backlog, sprint backlog, pesquisa e elaboração do design e da Identidade Visual, criação do wireframe e layout do site, assim como estruturação da equipe para gestão das horas com o gráfico burndown.
+Em prol de um melhor aproveitamento do tempo disponível durante a segunda sprint o time se dividiu em atividades como: desenvolvimento de cálculos NDVI e treinamento via Deep Learning, integração do CRUD de usuários do frontend com o backend, integração das buscas de imagens de satélites do frontend com o backend, criação das telas de funcionários, preview de imagens de satélite e exportar dados processados além da estruturação da equipe para gestão das horas com o gráfico burndown.
     
-<p align="center"><img src="./Imagens_md/burndown-sprint-01.PNG" /></p>
+<p align="center"><img src="./Imagens_md/burndown-sprint-02.PNG" /></p>
     
-
 
 → [Voltar ao topo](#topo)
