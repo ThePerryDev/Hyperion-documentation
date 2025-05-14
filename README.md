@@ -27,7 +27,7 @@ Cada entrega será realizada a partir da criação de uma **tag** no repositóri
 | Sprint | Previsão | Status | Histórico | Link da Apresentação
 |:------:|:----------:|:-------------|:-------------------------------------------------:|:-------------------------------------------------:|
 | 01 | De 24/03/25 a 21/04/25 |🟢 Finalizado | [Ver relatório](https://github.com/ThePerryDev/Hyperion-documentation/tree/sprint-01)| [SPRINT 01]()|
-| 02 | De 23/04/25 a 12/05/25 | :x: Não Iniciado| [Ver relatório](https://github.com/ThePerryDev/Hyperion-documentation/tree/sprint-02)| [SPRINT 02]()|
+| 02 | De 23/04/25 a 12/05/25 |🟢 Finalizado| [Ver relatório](https://github.com/ThePerryDev/Hyperion-documentation/tree/sprint-02)| [SPRINT 02]()|
 | 03 | De 14/05/25 a 09/06/25 | :x: Não Iniciado| [Ver relatório](https://github.com/ThePerryDev/Hyperion-documentation/tree/sprint-03)| [SPRINT 03]()|
 
 
