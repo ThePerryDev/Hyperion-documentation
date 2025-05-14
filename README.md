@@ -26,8 +26,8 @@ A partir da apresentação do pedido dado pela empresa Visiona, a solução apre
 Cada entrega será realizada a partir da criação de uma **tag** no repositório (Hyperion-documentation), assim como a criação de releases específicas para cada Sprint a fim de controlar cada etapa do projeto. Observe a relação a seguir:
 | Sprint | Previsão | Status | Histórico | Link da Apresentação
 |:------:|:----------:|:-------------|:-------------------------------------------------:|:-------------------------------------------------:|
-| 01 | De 24/03/25 a 21/04/25 |🟢 Finalizado | [Ver relatório](https://github.com/ThePerryDev/Hyperion-documentation/tree/sprint-01)| [SPRINT 01]()|
-| 02 | De 23/04/25 a 12/05/25 |🟢 Finalizado| [Ver relatório](https://github.com/ThePerryDev/Hyperion-documentation/tree/sprint-02)| [SPRINT 02]()|
+| 01 | De 24/03/25 a 21/04/25 |🟢 Finalizado | [Ver relatório](https://github.com/ThePerryDev/Hyperion-documentation/tree/sprint-01)| [SPRINT 01](https://www.youtube.com/watch?v=YR5Hky4j7dg)|
+| 02 | De 23/04/25 a 12/05/25 |🟢 Finalizado| [Ver relatório](https://github.com/ThePerryDev/Hyperion-documentation/tree/sprint-02)| [SPRINT 02](https://www.youtube.com/watch?v=IOSUI0NkEHU)|
 | 03 | De 14/05/25 a 09/06/25 | :x: Não Iniciado| [Ver relatório](https://github.com/ThePerryDev/Hyperion-documentation/tree/sprint-03)| [SPRINT 03]()|
 
 
